@@ -1,0 +1,50 @@
+.boxLogin {
+  padding: 10px;
+  margin-top: 8%;
+  width: 400px;
+  padding: 2px;
+  background-color: rgba(0, 0, 0, 0.35);
+  display: block;
+  border-radius: 10px;
+}
+
+.imgLogin {
+  width: 180px;
+  height: 190px;
+  padding: auto;
+  text-align: center;
+}
+
+.lgoImg {
+  padding: 2vh;
+  text-align: center;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+small {
+  color: red;
+  font-weight: bold;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.btn {
+  padding: 1vh;
+  border-radius: 5px;
+  width: 80%;
+  background-color: #141518 !important;
+  color: white;
+  box-shadow: 2px 2px 1px #494444;
+  border: solid 1px #524e4e !important;
+  font-size: 20px;
+}
+
+.imgLock {
+  width: 20px;
+  height: 20px;
+}
+
+label {
+  color: #ffffff;
+}
