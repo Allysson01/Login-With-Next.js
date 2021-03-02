@@ -3,7 +3,6 @@ import Grid from "../components/grid.jsx";
 import logo from "../images/user.png";
 import lock from "../images/lock.png";
 
-
 const BoxLogin = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -36,18 +35,26 @@ const BoxLogin = () => {
     }
   };
 
-  //Redirecioar ao apertar F12
+  let press = [];
+  //Redirecioar ao apertar F12 ou Control + Shift + I
   React.useEffect(() => {
     document.addEventListener("keydown", (event) => {
-      if (event.key == "F12") {
+      press[event.key] = event.type == "keydown";
+
+      if (
+        event.key == "F12" ||
+        (press["Control"] == true &&
+          press["Shift"] == true &&
+          press["I"] == true)
+      ) {
         window.location.href = "http://www.google.com.br";
       }
     });
   }, []);
-
+  
   return (
     <>
-      <div className="boxLogin">       
+      <div className="boxLogin">
         <form onSubmit={Login}>
           <Grid cols="12">
             <div className="form-group lgoImg">
